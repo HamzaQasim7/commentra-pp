@@ -1,0 +1,119 @@
+Privacy Policy for CommentRa
+
+**Effective date:** May 1, 2026  
+**Last updated:** May 1, 2026
+
+CommentRa ("we", "our", or "us") provides a Chrome extension that helps users write human-like social media comments and context-aware replies on supported platforms.
+
+This Privacy Policy explains what data CommentRa processes, why it is processed, and what choices users have.
+
+## 1) Scope
+
+This policy applies to the CommentRa browser extension and related extension pages (popup/options).  
+It does not govern third-party websites (such as LinkedIn, X/Twitter, Reddit, or OpenAI), which have their own policies.
+
+## 2) Data We Process
+
+CommentRa is designed to minimize data collection. It does not require account signup and does not run our own backend for user content storage.
+
+### A. Data stored locally on your device
+
+CommentRa stores the following in `chrome.storage.local`:
+
+- OpenAI API key (encrypted at rest using AES-GCM in the extension)
+- User preferences (for example: default tone, selected model)
+- Optional voice profile text you provide in settings
+- Cached subreddit rules (when available)
+
+### B. Context data processed for generation
+
+When you click generate, CommentRa reads visible page context from supported sites (LinkedIn, X/Twitter, Reddit), which may include:
+
+- Post text and post author name (as visible on page)
+- Comment thread text and author names needed for reply hierarchy
+- Current page URL
+- Subreddit name and visible subreddit rules (for Reddit)
+- Your selected tone and optional voice profile
+
+### C. Generated output
+
+Generated comment/reply text is returned to the extension UI and can be inserted by you into the page.
+
+## 3) How We Use Data
+
+We use processed data only to provide core functionality:
+
+- Generate context-aware comment suggestions
+- Generate context-aware reply suggestions using thread hierarchy
+- Apply your tone and optional voice profile preferences
+- Cache certain settings/rules to improve speed and usability
+
+## 4) Third-Party Processing (OpenAI)
+
+Comment generation requests are sent directly from the extension to OpenAI APIs using the API key you provide.
+
+This means:
+
+- Social post/comment context selected by the extension for generation is transmitted to OpenAI
+- We do not operate a separate server that stores this prompt content
+- Your use of OpenAI services is also governed by OpenAI's terms and privacy policy
+
+## 5) What We Do Not Do
+
+CommentRa does **not**:
+
+- Sell your personal data
+- Use your data for advertising profiles
+- Auto-post comments without your action
+- Collect payment information
+- Require user account registration to use core extension features
+
+## 6) Permissions and Why They Are Needed
+
+CommentRa may request the following Chrome permissions:
+
+- `storage`: save encrypted API key and user preferences locally
+- `activeTab`: access the current tab after user action
+- `tabs`: identify/interact with current tab for extension workflow
+- `scripting`: run content extraction/insertion logic on supported pages
+- `sidePanel`: provide assistant UI experience where applicable
+- Host permissions for LinkedIn, X/Twitter, and Reddit: read visible context on supported pages to generate relevant suggestions
+
+## 7) Data Retention
+
+- Local settings remain on-device until you remove them (or uninstall/clear extension storage).
+- Cached subreddit rules are kept locally with a time-to-live strategy in the extension.
+- We do not maintain a central database of your generated content in this extension architecture.
+
+## 8) Security
+
+We apply reasonable safeguards, including local encryption of the stored API key in extension storage.
+
+No method of transmission or storage is 100% secure. Users should protect their browser profile and device access.
+
+## 9) Your Choices and Controls
+
+You can:
+
+- Update or remove your API key and settings in extension options
+- Clear extension local storage by uninstalling the extension or clearing browser extension data
+- Choose whether to generate content on a given page
+
+## 10) Children's Privacy
+
+CommentRa is not directed to children under 13 (or equivalent minimum age in your jurisdiction), and we do not knowingly collect children's personal data.
+
+## 11) International Users
+
+If you use CommentRa outside your home country, your data may be processed by third-party providers in other jurisdictions (for example, OpenAI infrastructure), subject to their terms.
+
+## 12) Changes to This Policy
+
+We may update this Privacy Policy from time to time. Material changes will be reflected by updating the "Last updated" date.
+
+## 13) Contact
+
+For privacy questions or requests, contact:
+
+- **Email:** `progfinity.co@gmail.com`
+
